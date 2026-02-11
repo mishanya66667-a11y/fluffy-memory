@@ -1,0 +1,48 @@
+# Environment
+.env
+*.env
+
+# Configuration
+config.json
+
+# Logs
+logs/
+*.log
+
+# Recordings
+recordings/
+*.wav
+*.mp3
+*.gsm
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Docker
+.dockerignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# AGI temp
+/tmp/agi_audio/

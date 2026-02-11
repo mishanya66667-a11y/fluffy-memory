@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  asterisk:
+    build: .
+    container_name: ai-callcenter
+    restart: unless-stopped
+    ports:
+      - "5060:5060/udp"
+      - "10000-10100:10000-10100/udp"
+      - "4573:4573"
+    volumes:
+      - ./agi:/usr/local/agi
+      - ./recordings:/var/spool/asterisk/recordings
+      - ./agi/logs:/var/log/agi
+    env_file:
+      - .env
+    networks:
+      - callcenter
+
+networks:
+  callcenter:
+    driver: bridge
