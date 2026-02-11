@@ -1,8 +1,14 @@
-anthropic==0.40.0
-openai==1.12.0
-google-generativeai==0.3.2
-gtts==2.5.0
-SpeechRecognition==3.10.1
+# AI Providers - OPTIMIZED FOR SPEED
+groq==0.11.0
+
+# Speech Recognition - FASTER WHISPER
+faster-whisper==1.0.3
+openai-whisper==20231117
+
+# Audio Processing
 pydub==0.25.1
+soundfile==0.12.1
+
+# Utilities
 requests==2.31.0
 python-dotenv==1.0.0
